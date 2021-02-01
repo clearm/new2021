@@ -3,76 +3,174 @@
 <head>
     <meta charset="utf-8">
     <title>Inspecting CSS</title>
-    <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" >
+    <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
     <style>
         body {
             background-color: #fff;
             color: #333;
-            font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+            font: 0.9em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
             padding: 0;
             margin: 0;
         }
-
         .container {
-            padding: 20px 10px;
+            padding: 5px 10px;
             max-width: 900px;
-            margin: 40px auto;
+            margin: 10px auto;
         }
 
-        .box1 {
-          width: 400px;
-          margin: 0 0 40px 0;
-          padding: 20px;
-          border: 5px solid rgb(75, 70, 74);
+        .container-head {
+            padding: 5px 5px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .container-gnb {
+            padding: 5px 5px;
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        .box_800 {
+          display:block;
+          /* width: 850px; */
+          height:166px;
+          /*margin: 0 0 15px 0;*/
+          padding: 25px;
+          border: 0.5px solid rgb(175, 170, 174);
           border-radius: .5em;
         }
 
-        .box2 {
-          box-sizing: border-box;
+        .box_400 {
+          display:inline-block;
           width: 400px;
-          margin: 0 0 40px 0;
+          margin: 0 5px 5px 0;
           padding: 20px;
-          border: 5px solid rgb(78, 17, 66);
+          border: 0.5px solid rgb(175, 174, 174);
           border-radius: .5em;
         }
 
-        .special {
-          color: orange;
+        /* ---//  menu    */
+        .pc_header_gnb {
+            background-color: #eef;
+            height:66px;
+            margin: 0 0 10px 0;
         }
 
-        em {
-          color: hotpink;
-          font-weight: bold;
+        .pc_header_gnb ul {
+            display:inline-block;
+            list-style:none;
         }
+
+        .pc_header_gnb ul li {
+            float:left;
+            width:120px;
+            vertical-align:center;
+        }
+        /*  ---// menu    */
 
     </style>
 
-</head>
+</head><body>
 
-<body>
+    <div class="container-head">
+        <div  class="box_800">
+            <p> 안녕하세요~ 000인 000입니다.</p>
+             <p> 당신의 히스토리를 입력하세요~
+                 Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+                tomatillo
+                melon azuki bean garlic.</p>
+        </div>
+    </div>
+
+    <div class="container-gnb">
+        <div id="kakaoGnb" role="navigation" class="pc_header_gnb">
+            <img src="static/jhm.png" style="width:66px;height:66px;" />
+            <ul>
+                <li> <a href="/">community type</a> </li><li> <a href="/">menu1</a> </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="box1">
+        <div  class="box_400">
+            <h5> 추천게시물 </h5>
+            <p> 추천게시물이 뭔지 설명해줌  </p>
+            <table>
+                <tr><td width="85%">블라블라</td><td>2021.01.01</td></tr>
+                <tr><td>블라블라</td><td>2021.01.01</td></tr>
+                <tr><td>블라블라</td><td>2021.01.01</td></tr>
+                <tr><td>블라블라</td><td>2021.01.01</td></tr>
+            </table>
+        </div>
+
+        <div  class="box_400">
+            <h5> 추천게시물 </h5>
+             <p>
+                  2021의 새로운 모습
+                  main 이라는 브랜치가 보임111
+              </p>
+              <table>
+                  <tr><td width="85%">블라블라</td><td>2021.01.01</td></tr>
+                  <tr><td>블라블라</td><td>2021.01.01</td></tr>
+                  <tr><td>블라블라</td><td>2021.01.01</td></tr>
+                  <tr><td>블라블라</td><td>2021.01.01</td></tr>
+              </table>
+        </div>
+
+        <!-- <div class="box_400">
+           <h5> 섹션1 : 제목이지요 </h5>
           <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
             tomatillo
             melon azuki bean garlic.</p>
             <p>
                 2021의 새로운 모습
-                main 이라는 브랜치가 보임
+                main 이라는 브랜치가 보임111
             </p>
         </div>
 
-        <div class="box2">
-          <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
-            collard
-            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        <div class="box_400">
+           <h5> 섹션1 : 제목이지요 </h5>
+          <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+            tomatillo
+            melon azuki bean garlic.</p>
+            <p>
+                2021의 새로운 모습
+                main 이라는 브랜치가 보임111
+            </p>
+        </div>
+        <div class="box_400">
+           <h5> 섹션1 : 제목이지요 </h5>
+          <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+            tomatillo
+            melon azuki bean garlic.</p>
+            <p>
+                2021의 새로운 모습
+                main 이라는 브랜치가 보임111
+            </p>
         </div>
 
-        <p>Turnip <em class="special">greens</em> yarrow ricebean rutabaga endive cauliflower <em>sea lettuce</em> kohlrabi amaranth water spinach
+        <div class="box_400">
+           <h5> 섹션1 : 제목이지요 </h5>
+          <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
+            tomatillo
+            melon azuki bean garlic.</p>
+            <p>
+                2021의 새로운 모습
+                main 이라는 브랜치가 보임111
+            </p>
+        </div> -->
+
+
+        <div class="box2">
+          <p> © 2021 - mjh. All rights reserved. </p>
+        </div>
+
+        <!-- <p>Turnip <em class="special">greens</em> yarrow ricebean rutabaga endive cauliflower <em>sea lettuce</em> kohlrabi amaranth water spinach
             avocado
             daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish
             spinach
             carrot soko.
-        </p>
+        </p> -->
 
     </div>
 </body>
