@@ -4,3 +4,28 @@
     max-width: 900px;
     margin: 10px auto;
 }
+
+.container-gnb {
+    padding: 5px 5px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* ---//  menu    */
+.pc_header_gnb {
+    background-color: #eef;
+    height:66px;
+    margin: 0 0 10px 0;
+}
+
+.pc_header_gnb ul {
+    display:inline-block;
+    list-style:none;
+}
+
+.pc_header_gnb ul li {
+    float:left;
+    width:120px;
+    vertical-align:center;
+}
+/*  ---// menu    */
