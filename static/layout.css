@@ -1,0 +1,6 @@
+/*공통으로 사용하는 레이아웃시 여기다 넣기 */
+.container {
+    padding: 5px 10px;
+    max-width: 900px;
+    margin: 10px auto;
+}

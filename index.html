@@ -2,66 +2,63 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <title>Inspecting CSS</title>
+    <title> now2021</title>
     <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
     <link rel="stylesheet" href="static/tag.css" >
     <link rel="stylesheet" href="static/a_style.css" >
+    <link rel="stylesheet" href="static/layout.css" >
+
     <style>
-        .container {
-            padding: 5px 10px;
-            max-width: 900px;
-            margin: 10px auto;
-        }
+    .container-head {
+        padding: 5px 5px;
+        max-width: 900px;
+        margin: 20px auto;
+    }
 
-        .container-head {
-            padding: 5px 5px;
-            max-width: 900px;
-            margin: 20px auto;
-        }
+    .container-gnb {
+        padding: 5px 5px;
+        max-width: 900px;
+        margin: 20px auto;
+    }
 
-        .container-gnb {
-            padding: 5px 5px;
-            max-width: 900px;
-            margin: 20px auto;
-        }
+    .box_800 {
+      display:block;
+      /* width: 850px; */
+      min-height:100px;
+      /*margin: 0 0 15px 0;*/
+      padding: 25px;
+      border: 0.5px solid rgb(175, 170, 174);
+      border-radius: .5em;
+    }
 
-        .box_800 {
-          display:block;
-          /* width: 850px; */
-          height:166px;
-          /*margin: 0 0 15px 0;*/
-          padding: 25px;
-          border: 0.5px solid rgb(175, 170, 174);
-          border-radius: .5em;
-        }
+    .box_400 {
+      display:inline-block;
+      width: 400px;
+      margin: 0 5px 5px 0;
+      padding: 20px;
+      border: 0.5px solid rgb(175, 174, 174);
+      border-radius: .5em;
+    }
 
-        .box_400 {
-          display:inline-block;
-          width: 400px;
-          margin: 0 5px 5px 0;
-          padding: 20px;
-          border: 0.5px solid rgb(175, 174, 174);
-          border-radius: .5em;
-        }
+    /* ---//  menu    */
+    .pc_header_gnb {
+        background-color: #eef;
+        height:66px;
+        margin: 0 0 10px 0;
+    }
 
-        /* ---//  menu    */
-        .pc_header_gnb {
-            background-color: #eef;
-            height:66px;
-            margin: 0 0 10px 0;
-        }
+    .pc_header_gnb ul {
+        display:inline-block;
+        list-style:none;
+    }
 
-        .pc_header_gnb ul {
-            display:inline-block;
-            list-style:none;
-        }
+    .pc_header_gnb ul li {
+        float:left;
+        width:120px;
+        vertical-align:center;
+    }
+    /*  ---// menu    */
 
-        .pc_header_gnb ul li {
-            float:left;
-            width:120px;
-            vertical-align:center;
-        }
-        /*  ---// menu    */
 
     </style>
 
@@ -69,11 +66,12 @@
 
     <div class="container-head">
         <div  class="box_800">
-            <p> 안녕하세요~ 000인 000입니다.</p>
-             <p> 당신의 히스토리를 입력하세요~
-                 Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-                tomatillo
-                melon azuki bean garlic.</p>
+            <p> 안녕하세요 ~ web developer인  jh 입니다.</p>
+            <p> free 인 관계로 프로그래밍 없이 css,javascript,html5로 만 만들어진 web page입니다.<br>
+                여러가지 글을 쓸 예정이고 이곳은 2021년에 대한 기록이 될 것입니다.
+                2021년 동안 만들어질 것이라 아직은 미숙한 것이 많습니다.<br>
+                여기는 공지같은 공간이고 주저리 공간입니다.
+            </p>
         </div>
     </div>
 
@@ -81,18 +79,24 @@
         <div id="kakaoGnb" role="navigation" class="pc_header_gnb">
             <img src="static/jhm.png" style="width:66px;height:66px;" />
             <ul>
-                <li> <a href="index.html">community type</a> </li><li> <a href="/">menu1</a> </li>
+                <li> <a href="index.html"> 미래의 메뉴1 </a> </li><li> <a href="/"> 미래의 메뉴2</a> </li>
             </ul>
         </div>
     </div>
 
     <div class="container">
         <div  class="box_400">
-            <h5> 추천게시물 </h5>
-            <p> 추천게시물이 뭔지 설명해줌  </p>
+            <h5> 내 게시물 </h5>
+            <p> 나의 생각정리 </p>
             <table>
-                <tr><td width="85%">블라블라</td><td>2021.01.01</td></tr>
-                <tr><td><a href="detail.html">블라블라</a></td><td>2021.01.01</td></tr>
+                <tr>
+                    <td width="85%"><a href="application.html"> 어딘가에 지원하기(러프버전) </a></td><td>2021.02.04</td></tr>
+                <tr>
+                    <td width="85%"><a href="application2.html"> 어딘가에 지원하기(정식버전) </a></td><td>2021.02.04</td></tr>
+                <tr>
+                    <td width="85%"><a href="application3.html"> 어딘가에 지원하기(타임라인버전) </a></td><td>2021.02.04</td></tr>    
+                <tr>
+                    <td><a href="detail.html">블라블라</a></td><td>2021.01.01</td></tr>
                 <tr><td>블라블라</td><td>2021.01.01</td></tr>
                 <tr><td>블라블라</td><td>2021.01.01</td></tr>
             </table>
@@ -168,5 +172,20 @@
         </p> -->
 
     </div>
+
+<script>
+
+var ul = document.querySelector('li');
+ //li 엘리먼트중 맨위에 첫번째 객체만을 담는다
+ ul.style.color='red';
+ var ol = document.querySelectorAll('ol');
+ //ol 엘리먼트들을 유사배열로 만든다
+ ol[0].style.color='blue';
+
+
+
+</script>
+
+
 </body>
 </html>
