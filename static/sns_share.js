@@ -70,9 +70,6 @@ function kSend(){
     });
 }  // kSend's end
 
-
-
-
 // 카카오 공유
 function fn_kSendEdge()
 {
@@ -86,7 +83,6 @@ function fn_kSendEdge()
     // }
 
 } // fn_kSendEdge's end
-
 
 let kakaotalk_btn = document.getElementById("kakao_link_btn");
 kakaotalk_btn.addEventListener("click", function(){
