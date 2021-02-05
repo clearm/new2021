@@ -2,73 +2,92 @@
 <html lang="ko">
 <head>
     <meta charset="utf-8">
-    <title>Inspecting CSS</title>
+    <title>WEB PROGRAMMER JH </title>
     <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
     <link rel="stylesheet" href="static/tag.css" >
     <link rel="stylesheet" href="static/a_style.css" >
     <link rel="stylesheet" href="static/layout.css" >
-    <style>
 
 
-    </style>
-
-</head><body>
+</head>
+<body>
 
     <div class="container-gnb">
         <div id="kakaoGnb" role="navigation" class="pc_header_gnb">
             <a href="index.html"><img src="static/jhm.png" style="width:66px;height:66px;" /></a>
             <ul>
-                <li> <a href="/">community type</a> </li><li> <a href="/">menu1</a> </li>
+                <li> <a href="index.html"> 미래의 메뉴1 </a> </li>
+                <li> <a href="/"> 미래의 메뉴2</a> </li>
             </ul>
         </div>
     </div>
 
-
-    <div class="container">
-        <div  class="box_800">
-            <h2> 안녕하세요~ 000인 000입니다.</h2>
-
-            <h3  >Choose a bank</h3>
-             <p> 당신의 히스토리를 입력하세요~
-                 Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-                tomatillo
-                melon azuki bean garlic.</p>
-
-            <h3  >Choose a bank</h3>
-            <p> 당신의 히스토리를 입력하세요~
-            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-            tomatillo
-            melon azuki bean garlic.</p>
-
-            <h3  >Choose a bank</h3>
-            <p> 당신의 히스토리를 입력하세요~
-            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-            tomatillo
-            melon azuki bean garlic.</p>
-            <h3  >Choose a bank</h3>
-             <p> 당신의 히스토리를 입력하세요~
-                 Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-                tomatillo
-                melon azuki bean garlic.</p>
-
-            <h3  >Choose a bank</h3>
-            <p> 당신의 히스토리를 입력하세요~
-            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-            tomatillo
-            melon azuki bean garlic.</p>
-
-            <h3  >Choose a bank</h3>
-            <p> 당신의 히스토리를 입력하세요~
-            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-            tomatillo
-            melon azuki bean garlic.</p>
+    <!-- 내용 -->
+    <div class="container" >
+        <div  class="box_800" >
+            <h2> 여기는 큰 제목.</h2>
+             <h3> 문단의 제목 </h3>
+             <p> 문단의 내용 </p>
         </div>
     </div>
+    <!--// 내용 -->
 
+    <!--  읽고나면 공유하고 싶을거야 -->
+        <div class="container">
+            <div  class="box_800" >
+                <!-- <span>
+                <script type="text/javascript" src="https://ssl.pstatic.net/share/js/naver_sharebutton.js"></script>
+                <script type="text/javascript">
+                    new ShareNaver.makeButton({"type": "c"});
+                </script>
+                </span> -->
+
+              <!-- 페이스북 공유 버튼 -->
+              <!-- <a id="fb_share_bt" href="javascript:void(0);" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=600, height=600'); return false;"> -->
+
+              <a id="fb_share_bt" >
+                  <img src="https://edgeranklab.com/images/share/facebook.gif" title="페이스북으로 공유하기" class="sharebtn_custom" style="width: 42px;"></a>
+
+              <!-- 트위터 공유 버튼 -->
+              <a id="tw_share_bt" >
+                  <img src="https://edgeranklab.com/images/share/twitter.gif" title="트위터로 공유하기" class="sharebtn_custom" style="width: 42px;">
+              </a>
+
+              <!-- 카카오 스토리 공유 버튼 -->
+              <a id="kakao_story_share_bt" >
+                  <img src="https://edgeranklab.com/images/share/kakaostory.gif" title="카카오스토리로 공유하기" class="sharebtn_custom" style="width: 42px;"></a>
+
+              <!-- 네이버 공유 버튼 -->
+              <a id="naver_share_bt" >
+                  <img src="https://edgeranklab.com/images/share/naverblog.gif" title="네이버블로그로 공유하기" class="sharebtn_custom" style="width: 42px;"></a>
+
+              <!-- 밴드 공유 버튼 -->
+              <a id="naver_band_bt" >
+                  <img src="https://edgeranklab.com/images/share/band.gif" title="밴드로 공유하기" class="sharebtn_custom" style="width: 42px;"></a>
+
+              <a href="javascript:void(0);" id="kakao_link_btn">
+                  <!-- 버튼이 생기는 부분, id는 맘대로 쓰시되 아래 js 코드도 동일하게 적용해주셔야 합니다. -->
+              <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" title="카카오톡으로 공유하기"  style="width: 42px;" /> <!-- 톡 이미지 부분이고, 전 kakaolink_btn_small.png로 불러왔습니다.   -->
+              </a>
+
+
+
+            </div>
+        </div>
+    <!-- // 공유 -->
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="static/sns_share.js"></script>
+
+
+
+    <!--  FOOTER -->
     <div class="container">
         <div class="box2">
           <p> © 2021 - mjh. All rights reserved. </p>
         </div>
     </div>
+
+
+
 </body>
 </html>
