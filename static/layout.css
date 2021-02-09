@@ -21,11 +21,19 @@
 .pc_header_gnb ul {
     display:inline-block;
     list-style:none;
+    padding-bottom: 7px;
 }
 
 .pc_header_gnb ul li {
     float:left;
-    width:120px;
+    width:100px;
     vertical-align:center;
 }
 /*  ---// menu    */
+
+/* --- footer -- */
+.footer {
+    margin-top: 3em;
+    color: #757575;
+}
+/* //--- footer -- */

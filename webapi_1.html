@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>WEB PROGRAMMER JH </title>
+    <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
+    <link rel="stylesheet" href="static/tag.css" >
+    <link rel="stylesheet" href="static/a_style.css" >
+    <link rel="stylesheet" href="static/layout.css" >
+
+</head>
+<body>
+
+    <div class="container-gnb">
+        <div id="kakaoGnb" role="navigation" class="pc_header_gnb">
+            <a href="index.html"><img src="static/jhm.png" style="width:66px;height:66px;" /></a>
+            <ul>
+                <li> <a href="index.html"> 미래의 메뉴1 </a> </li>
+                <li> <a href="/"> 미래의 메뉴2</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 내용 -->
+    <div class="container" >
+        <div  class="box_800" >
+            <h2> 웹api </h2>
+             <h3> 선택자  </h3>
+             <p>
+                 <ul>
+                     <li>  https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector </li>
+                 </ul>
+
+             </p>
+
+             <h3> class 제어  </h3>
+             <p>
+                 <pre>
+                 $('#ele').addClass('on');
+                 $('#ele').addClass('on normal');
+                 $('#ele').removeClass('on');
+                 $('#ele').removeClass('on normal');
+                 $('#ele').hasClass('on');
+                 $('#ele').hasClass('on normal');
+                 $('#ele').toggleClass('on');
+                </pre>
+             </p>
+
+             <p>
+                <code>
+                    var ele = document.getElementById('ele');
+
+                    ele.classList.add('on');
+                    ele.classList.add('on', 'normal');
+                    ele.classList.remove('on');
+                    ele.classList.remove('on', 'normal');
+                    ele.classList.contains('on');
+                    ele.classList.contains('on', 'normal');
+                    ele.classList.toggle('on');
+                    ele.classList.toggle('on', false);
+                </code>
+
+             </p>
+
+             <h3> HTML element 엘레먼트 삭제   </h3>
+             <p>
+                 <pre>
+                       var myobj = document.getElementById("demo");
+                       myobj.remove();
+
+                   </pre>
+             </p>
+
+             <h3> HTML DOM  https://www.w3schools.com/jsref/dom_obj_attributes.asp  </h3>
+             <p> https://www.w3schools.com/jsref/prop_attr_value.asp </p>
+
+             <h3> HTML DOM element    </h3>
+             <p>
+                <pre>
+                    var x = document.getElementsByTagName("IMG")[0];
+                    x.getAttributeNode("src").value = "pic_bulbon.gif";   // getAttributeNode는 메서드 닷..
+
+                    document.getElementsByTagName("H1")[0].setAttribute("class", "democlass");
+
+                    element.style.backgroundColor = "red"; ( good )
+                    element.setAttribute("style", "background-color: red;"); (bad)
+
+
+                    document.getElementById("myAnchor").setAttribute("href", "https://www.w3schools.com");
+
+                    document.getElementsByTagName("INPUT")[0].setAttribute("type", "button");
+                    // 타입을 바꾸어 버리니  INPUT text => button  이 됨.
+                </pre>
+             </p>
+
+        </div>
+
+        <!--  FOOTER -->
+        <hr>
+        <footer class="footer">
+            <div class="">
+              <p> © 2021 - mjh. All rights reserved. </p>
+            </div>
+        </footer>
+        <!--//  FOOTER -->
+
+    </div>
+    <!--// 내용 -->
+
+
+</body>
+</html>

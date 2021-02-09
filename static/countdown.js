@@ -1,6 +1,7 @@
 
 const year = (new Date().getFullYear());
 const month = (new Date().getMonth());
+const date = new Date().getDate();
 
 const lastDay = ( new Date( year, month+1, 0) ).getDate(); // 현재 달의 마지막 일자
 
@@ -101,9 +102,11 @@ function fn_today_number()
 {
     let v_this_year_num = document.querySelector("#this_year_num");
     let v_this_month_num = document.querySelector("#this_month_num");
+    let v_this_date_num = document.querySelector("#this_date_num");
 
     v_this_year_num.innerHTML = year;
     v_this_month_num.innerHTML = month+1;
+    v_this_date_num.innerHTML = date;
 
 }
 fn_today_number()

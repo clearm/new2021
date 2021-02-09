@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>WEB PROGRAMMER JH </title>
+    <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
+    <link rel="stylesheet" href="static/tag.css" >
+    <link rel="stylesheet" href="static/a_style.css" >
+    <link rel="stylesheet" href="static/layout.css" >
+
+<style>
+.polling_message {
+  color: white;
+  float: left;
+  margin-right: 2%;
+}
+
+.view_port {
+  background-color: black;
+  height: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cylon_eye {
+  background-color: red;
+   background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%);
+  color: white;
+  height: 100%;
+  width: 20%;
+  /* @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+  -webkit-animation: 4s linear 0s infinite alternate move_eye;
+          animation: 4s linear 0s infinite alternate move_eye;
+}
+
+/*
+ @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+        @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  } */
+
+</style>
+
+</head>
+<body>
+
+    <div class="container-gnb">
+        <div id="kakaoGnb" role="navigation" class="pc_header_gnb">
+            <a href="index.html"><img src="static/jhm.png" style="width:66px;height:66px;" /></a>
+            <ul>
+                <li> <a href="index.html"> 미래의 메뉴1 </a> </li>
+                <li> <a href="/"> 미래의 메뉴2</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 내용 -->
+    <div class="container" >
+        <div  class="box_800" >
+            <h2> 여기는 큰 제목.</h2>
+             <h3> 문단의 제목 </h3>
+             <p> 문단의 내용 </p>
+
+
+            <div class="view_port">
+                <div class="polling_message">
+                    Listening for dispatches
+                </div>
+                <div class="cylon_eye"></div>
+            </div>
+
+        </div>
+    </div>
+    <!--// 내용 -->
+
+    <!--  FOOTER -->
+    <div class="container">
+        <div class="box2">
+          <p> © 2021 - mjh. All rights reserved. </p>
+        </div>
+    </div>
+
+</body>
+</html>
