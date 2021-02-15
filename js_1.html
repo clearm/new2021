@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>WEB PROGRAMMER JH </title>
+    <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
+    <link rel="stylesheet" href="static/tag.css" >
+    <link rel="stylesheet" href="static/a_style.css" >
+    <link rel="stylesheet" href="static/layout.css" >
+
+</head>
+<body>
+
+    <div class="container-gnb">
+        <div id="kakaoGnb" role="navigation" class="pc_header_gnb">
+            <a href="index.html"><img src="static/jhm.png" style="width:66px;height:66px;" /></a>
+            <ul>
+                <li> <a href="index.html"> 미래의 메뉴1 </a> </li>
+                <li> <a href="/"> 미래의 메뉴2</a> </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- container -->
+    <div class="container" >
+        <div  class="box_800" >
+            <h2> JS - 자바가 아니다 자바스크립트다 </h2>
+            <h3> 호이스팅 이란  </h3>
+            <p> 각 변수의 적용영역 </p>
+        </div>
+        <div  class="box_800" >
+            <h3> const, var, let 의 차이점  </h3>
+            <p>  const : 어느 영역에서나 불변 <br>
+            let :  한번만 선언 <br>
+            var: 여기저기서 선언되는 팔색조 <br>
+            </p>
+        </div>
+        <div  class="box_800" >
+            <h3> 유용한 사용법  </h3>
+            <p>
+                <ul>
+                    <li>
+                        <code>
+                            var seconds = Math.floor(Date.now() / 1000); // get the number of seconds since unix epoch
+                            document.write(seconds);
+                        </code>
+
+                    </li>
+                    <li>
+                        <code>
+                        const now = new Date();
+                        const onTime = new Date('2021-02-14 23:59:59');
+                        // 이경우가 사파리는 먹지 않음   new Date(2021,2,14,23,59,59); 올 브라우져 적용가능
+
+                        //new Date(year, month, day, hours, minutes, seconds, milliseconds)
+                        //var d = new Date(2018, 11, 24, 10, 33, 30, 0);
+                        // new Date('02/28/2015') mm/dd/yyyy 방식을 사용하던지 .
+
+                        let event_ing = "";
+                        if(now > onTime){
+                            event_ing = "N";
+                        }else {
+                            event_ing = "Y";
+                        }
+                        </code>
+                    </li>
+                </ul>
+            </p>
+        </div>
+
+
+        <!--  FOOTER -->
+        <hr>
+        <footer class="footer">
+            <div class="">
+              <p> © 2021 - mjh. All rights reserved. </p>
+            </div>
+        </footer>
+        <!--//  FOOTER -->
+
+<script>
+const onTime = new Date(2021,2,14,23,59,59);
+document.write(onTime);
+
+</script>
+
+
+
+    </div>
+    <!--// container -->
+</body>
+</html>
