@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>WEB PROGRAMMER JH </title>
+    <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
+    <link rel="stylesheet" href="static/tag.css" >
+    <link rel="stylesheet" href="static/a_style.css" >
+    <link rel="stylesheet" href="static/layout.css" >
+
+</head>
+<body>
+
+    <div class="container-gnb">
+        <div id="kakaoGnb" role="navigation" class="pc_header_gnb">
+            <a href="index.html"><img src="static/jhm.png" style="width:66px;height:66px;" /></a>
+            <ul>
+                <li> <a href="index.html"> 처음으로가기 </a> </li>
+                <!-- <li> <a href="/"> 미래의 메뉴2</a> </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- container -->
+    <div class="container" >
+        <div  class="box_800" >
+            <h2> JS - 예제 </h2>
+
+            <h3> 시저암호- 참고해서 풀었다.  </h3>
+            <p>
+                <pre>
+                    function fn_sissar(s,n)
+                    {
+                        var rt = 0;
+
+                        if(n > 8000){
+                            n = 8000;
+                        }
+
+                        let s_ascii_arr = s_ascii_plus_arr = s_string_arr= [];
+
+                        // s를 분리하여 배열로 변경해야 겠다.
+                        let s_arr = s.slice(); // 문자열 분리
+                        for(let i=0; i < s_arr.length; i++){
+
+                            s_ascii_arr[i] = s.charCodeAt(i);
+
+                            // 대문자라면
+                            if(65 <= s_ascii_arr[i] && s_ascii_arr[i] <= 90){
+                                 rt = fn_upper(s_ascii_arr[i],n);
+                            } else if(97 <= s_ascii_arr[i] && s_ascii_arr[i] <= 122){    // 소문자라면
+                                rt = fn_lower(s_ascii_arr[i],n);
+                            } else if(32 == s_ascii_arr[i] ){
+                                rt = 32;
+                            }
+
+                            s_string_arr[i] = String.fromCharCode(rt);  // 아스키코드를 문자열로만 바꾸면 됨.
+                        }
+
+                        //배열을 문자열로 만들려면
+                        const arr_string = s_string_arr.join('');
+
+                        //document.write(arr_string);
+
+                        return arr_string;
+                    }
+
+                    function fn_upper(s,n)
+                    {
+                        var damunja = 0;
+                        var sn = s+n;
+
+                        if(sn > 90){
+                            var namugi = (s+n)%90;
+                            damunja = 65+namugi;
+                        }else{
+                            damunja = sn;
+                        }
+                        return damunja;
+                    }
+
+                    function fn_lower(s,n)
+                    {
+                        var damunja = 0;
+                        var sn = s+n;
+
+                        if(sn > 122){
+                            var namugi = (s+n)%122;
+                            damunja = 97+namugi;
+                        }else{
+                            damunja = sn;
+                        }
+                        return damunja;
+                    }
+                </pre>
+
+            </p>
+        </div>
+
+        <!--  FOOTER -->
+        <hr>
+        <footer class="footer">
+            <div class="">
+              <p> © 2021 - mjh. All rights reserved. </p>
+            </div>
+        </footer>
+        <!--//  FOOTER -->
+    </div>  <!--// container -->
+</body>
+</html>
