@@ -2,6 +2,7 @@ a {
     outline: none;
      text-decoration: none;
      padding: 2px 1px 0;
+     display: inline;
 }
 a:link {
   color: #265301;
