@@ -59,3 +59,14 @@
     color: #757575;
 }
 /* //--- footer -- */
+
+
+.box_800 {
+  display:block;
+  /* width: 850px; */
+  min-height:100px;
+  /*margin: 0 0 15px 0;*/
+  padding: 25px;
+  border: 0.5px solid rgb(175, 170, 174);
+  border-radius: .5em;
+}
