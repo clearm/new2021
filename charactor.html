@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title> 어딘가에 지원하기 2 </title>
+    <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
+    <link rel="stylesheet" href="static/reset.css" >
+    <link rel="stylesheet" href="static/tag.css" >
+    <link rel="stylesheet" href="static/a_style.css" >
+    <link rel="stylesheet" href="static/layout.css" >
+</head><body>
+
+    <div class="container-gnb">
+        <div role="navigation" class="pc_header_gnb">
+            <a href="index.html"><img src="static/jhm.png" class="logo_img" /></a>
+            <div id="gnb_menu"></div>
+            <!-- <ul>
+                <li> <a href="html_1.html"> HTML </a> </li>
+                <li> <a href="webapi_1.html"> Web API </a> </li>
+                <li> <a href="css_list.html"> CSS </a> </li>
+                <li> <a href="javascript:alert('준비중');"> My Post </a> </li>
+            </ul> -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div  class="box_800">
+
+            <h2> 나를 구성하는 것들 - 성격편 </h2>
+            <h5> 작성일 : 2020-01-30</h5>
+            <div id="myPie" class="media border p-3"  >    </div>
+            <!-- <div id="myPie2" class="media border p-3"  >    </div> -->
+            <p>
+            </p>
+            <p>  나를 구성하는 것을 정의하기는 어렵다... </p>
+
+            <script src="//clearm.github.io/new2020/vendor/apexcharts/dist/apexcharts.js"></script>
+            <script>
+
+              var options = {
+                series: [44, 55, 13, 43, 22],
+                chart: {
+                     type: 'pie',
+                     width: 380,
+                     height: 280,
+                },
+                labels: ['규칙적', '적응력', '변덕', '고집', '들어주는편'],
+                responsive: [{
+                  breakpoint: 480,
+                  options: {
+                    chart: {
+                      width: 200
+                    },
+                    legend: {
+                      position: 'bottom'
+                    }
+                  }
+                }],
+                title :{ text : "성격",
+                }
+              };
+
+              var chart = new ApexCharts(document.querySelector("#myPie"), options);
+              chart.render();
+
+              // var chart2 = new ApexCharts(document.querySelector("#myPie2"), options);
+              // chart2.render();
+
+
+            </script>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box2">
+          <p> © 2021 - mjh. All rights reserved. </p>
+        </div>
+    </div>
+
+<script src="static/gnb.js"></script>
+
+</body>
+</html>
