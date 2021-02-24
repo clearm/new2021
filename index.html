@@ -36,6 +36,8 @@
             <p> 안녕하세요 ~ WEB DEVELOPER 인  jh 입니다.</p>
             <p> 사이트가 free인 관계로 프로그래밍 없이 css, javascript, html5 로 만 만들어진 WEB PAGE 입니다.<br>
                 여러가지 글을 쓸 예정이고 이곳은 2021년에 대한 기록이 될 것입니다.
+                full stack 개발자가 사이트도 없어서 라고 하지만 생각보다 css을 못하더라고요. <br>
+
                 2021년 동안 만들어질 것이라 아직은 미숙한 것이 많습니다.<br>
                 여기는 공지 같은 공간이고 주저리 공간입니다. 변명 같지만 SIMPLE IS BEST 입니다 ㅎㅎㅎ <BR>
                 저에게 디자인 감각을 주신다면 좋겠어요 ^^
@@ -106,7 +108,7 @@
         <hr>
         <footer class="footer">
             <div class="">
-              <p> © 2021 - mjh. All rights reserved. </p>
+              <p> © 2021 - mjh. All rights reserved. 연락처 : <a target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jhmun@edgerank.co.kr"  aria-label="메일주소">jhmun@edgerank.co.kr</a>  </p>
             </div>
         </footer>
 
@@ -117,14 +119,10 @@
 <script>
 
     var s_date = document.getElementById("now_date");
-
-
-    var today = new Date();
-
-    var year = today.getFullYear();
-    var month = today.getMonth()+1;
-
-    var date = today.getDate();
+    var today  = new Date();
+    var year   = today.getFullYear();
+    var month  = today.getMonth()+1;
+    var date   = today.getDate();
 
     s_date.textContent = year+"-"+month+"-"+date;
 
