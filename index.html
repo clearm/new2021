@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="static/a_style.css" >
     <link rel="stylesheet" href="static/layout.css" >
 
+    <link rel="stylesheet" href="static/digital_font.css" >
+
     <style>
     .container-head {
         padding: 5px 5px;
@@ -104,6 +106,37 @@
                 main 이라는 브랜치가 보임111
             </p>
         </div> -->
+
+        <hr>
+        <!-- 내용 -->
+        <div class="container" >
+            <div  class="box_800" >
+                <!-- <h2> 시간날짜 </h2> -->
+                <!-- <h3> 현재 날짜 </h3> -->
+                <p class="digital_style"> TODAY : <span id="this_year_num"></span>년<span id="this_month_num"></span>월<span id="this_date_num"></span>일
+                </p>
+
+                <h3> 이번달 남은 일자와 시간 - 한달이 요것밖에 안남음 </h3>
+                <p class="digital_style">
+                    <span id="days_ten">0</span>
+                    <span id="days_il">0</span>
+                    :
+                    <span id="hour_ten">0</span>
+                    <span id="hour_il">0</span>
+                    :
+                    <span id="min_ten">0</span>
+                    <span id="min_il">0</span>
+                    :
+                    <span id="sec_ten">0</span>
+                    <span id="sec_il">0</span>
+                 </p>
+
+            </div>
+        </div>
+        <!--// 내용 -->
+        <script src="static/countdown.js"></script>
+
+
 
         <hr>
         <footer class="footer">
