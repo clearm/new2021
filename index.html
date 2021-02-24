@@ -17,26 +17,6 @@
         max-width: 900px;
         margin: 20px auto;
     }
-
-    .box_800 {
-      display:block;
-      /* width: 850px; */
-      min-height:100px;
-      /*margin: 0 0 15px 0;*/
-      padding: 25px;
-      border: 0.5px solid rgb(175, 170, 174);
-      border-radius: .5em;
-    }
-
-    .box_400 {
-      display:inline-block;
-      width: 400px;
-      margin: 0 5px 5px 0;
-      padding: 20px;
-      border: 0.5px solid rgb(175, 174, 174);
-      border-radius: .5em;
-    }
-
     </style>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -74,14 +54,14 @@
     <div class="container">
 
         <div  class="box_400">
-            <h5> About me </h5>
-            <p> 누구를 꾸며주는 일만 하다보니 나를 표현하는 연습을 해야겠다는 생각으로 만든 공간. 다양한 버전을 선보일 예정입니다. </p>
+            <h5> 나만의 브랜딩 </h5>
+            <p> 누구를 꾸며주는 일만 하다보니 나를 표현하는 연습을 해야겠다는 생각으로 만든 공간.<br> 다양한 버전을 선보일 예정입니다. </p>
             <hr>
             <table>
                 <!-- <tr>
                     <td width="85%"><a href="application.html"> 어딘가에 지원하기(러프버전) </a></td><td>2021.02.04</td></tr> -->
                 <tr>
-                    <td width="85%"><a href="application5.html"> 어딘가에 지원하기(정식버전) </a></td><td>2021.02.04</td></tr>
+                    <td width="83%"><a href="application5.html"> 어딘가에 지원하기(update) </a></td><td> <span id="now_date"></span></td></tr>
                 <!-- <tr>
                     <td><a href="application3.html"> 어딘가에 지원하기(타임라인버전) </a></td><td>2021.02.04</td></tr>
                 <tr>
@@ -133,6 +113,22 @@
     </div>
 
 <script src="static/gnb.js"></script>
+
+<script>
+
+    var s_date = document.getElementById("now_date");
+
+
+    var today = new Date();
+
+    var year = today.getFullYear();
+    var month = today.getMonth()+1;
+
+    var date = today.getDate();
+
+    s_date.textContent = year+"-"+month+"-"+date;
+
+</script>
 
 
 </body>
