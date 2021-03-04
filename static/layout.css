@@ -22,14 +22,13 @@
     height:66px;
     margin: 0 0 10px 0;
     vertical-align: middle;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .pc_header_gnb ul {
     display: inline-block;
     width:100%;
     /*
-
     border:1px solid red; */
 }
 
@@ -39,7 +38,7 @@
     float:left;
     line-height: 30px;
     width:15%;
-    padding-top: 15px;
+    padding-top: 11px;
     vertical-align:middle;
     text-align: center;
 }
@@ -76,6 +75,6 @@
   width: 400px;
   margin: 0 5px 5px 0;
   padding: 20px;
-  border: 0.5px solid rgb(175, 174, 174);
+  border: 0.5px solid #f6eaea;   /*rgb(175, 174, 174); */
   border-radius: .5em;
 }

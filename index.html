@@ -128,7 +128,9 @@ animation-iteration-count: infinite;
 
         <div  class="box_400">
             <h5> 나의 저장소 </h5>
-             <p> 여러 가지 기본에 대한 글 - 솔직히 적고 싶은데 자꾸 자체 검열이 되네요 </p>
+             <p> 여러 가지 기본에 대한 글 - 솔직히 적고 싶은데 자꾸 자체 검열이 되네요.<br>
+                 계속적으로 추가 하겠습니다.
+             </p>
              <hr>
               <table>
                   <tr><td width="85%"> <a href="basic1.html"> web의기본 </a></td><td>2021.01.01</td></tr>
@@ -137,59 +139,44 @@ animation-iteration-count: infinite;
                  <tr><td><a href="current.html"> 현재시간 </a></td><td>2021.01.01</td></tr> -->
               </table>
         </div>
-
-        <!-- <div class="box_400">
-           <h5> 섹션1 : 제목이지요 </h5>
-          <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-            tomatillo
-            melon azuki bean garlic.</p>
-            <p>
-                2021의 새로운 모습
-                main 이라는 브랜치가 보임111
-            </p>
-        </div>
-
-        <div class="box_400">
-           <h5> 섹션1 : 제목이지요 </h5>
-          <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi
-            tomatillo
-            melon azuki bean garlic.</p>
-            <p>
-                2021의 새로운 모습
-                main 이라는 브랜치가 보임111
-            </p>
-        </div> -->
-
         <hr>
         <!-- 내용 -->
-        <div class="container" >
-            <div  class="box_800" >
-                <!-- <h2> 시간날짜 </h2> -->
-                <!-- <h3> 현재 날짜 </h3> -->
-                <p class="digital_style"> TODAY : <span id="this_year_num"></span>년<span id="this_month_num"></span>월<span id="this_date_num"></span>일
-                </p>
+        <div  class="box_400" >
+            <!-- <h2> 시간날짜 </h2> -->
+            <h5> 날짜와 시간 </h5>
+            <p class="digital_style"> TODAY : <span id="this_year_num"></span>/<span id="this_month_num"></span>/<span id="this_date_num"></span>
+            </p>
 
-                <h3> 이번달 남은 일자와 시간 - 한달이 요것밖에 안남음 </h3>
-                <p class="digital_style">
-                    <span id="days_ten">0</span>
-                    <span id="days_il">0</span>
-                    :
-                    <span id="hour_ten">0</span>
-                    <span id="hour_il">0</span>
-                    :
-                    <span id="min_ten">0</span>
-                    <span id="min_il">0</span>
-                    :
-                    <span id="sec_ten">0</span>
-                    <span id="sec_il">0</span>
-                 </p>
-
-            </div>
+            <h3> 이번 달 남은 일자와 시간 - 한 달이 요것밖에 안 남음 </h3>
+            <p class="digital_style">
+                <span id="days_ten">0</span>
+                <span id="days_il">0</span>
+                :
+                <span id="hour_ten">0</span>
+                <span id="hour_il">0</span>
+                :
+                <span id="min_ten">0</span>
+                <span id="min_il">0</span>
+                :
+                <span id="sec_ten">0</span>
+                <span id="sec_il">0</span>
+             </p>
         </div>
-        <!--// 내용 -->
         <script src="static/countdown.js"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <div  class="box_400" >
+            <h3> 바코드 쿠폰 - jquery 사용. </h3>
 
+            <div class="barcode_layout">
+                <div id="barcode_display"></div>
+            </div>
+            <script src="static/jquery-barcode.js"></script>
+            <script>
+
+            $("#barcode_display").barcode("1234567890128", "code128");
+            </script>
+        </div><!-- BOX END -->
 
         <hr>
         <footer class="footer">
