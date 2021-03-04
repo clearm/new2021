@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>WEB PROGRAMMER JH </title>
+    <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
+    <link rel="stylesheet" href="static/reset.css" >
+    <link rel="stylesheet" href="static/tag.css" >
+    <link rel="stylesheet" href="static/a_style.css" >
+    <link rel="stylesheet" href="static/layout.css" >
+
+    <style>
+
+    .poup_up {
+        position:absolute;top:150px;left:40%;
+        animation-name: move_up;
+        animation-duration: 2s;
+        /*animation-iteration-count: infinite; 이거 하면 계속 애니가 재생됨*/
+    }
+    .poup_down {
+        position:absolute;top:100%;left:40%;
+        animation-name: move_down;
+        animation-duration: 2s;
+        /*animation-iteration-count: infinite; 이거 하면 계속 애니가 재생됨*/
+    }
+
+    @keyframes move_up {
+        from { top:100%;}
+        to   { top:20%;}
+    }
+    @keyframes move_down {
+        from { top:20%;}
+        to   { top:100%;}
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="container-gnb">
+        <div role="navigation" class="pc_header_gnb">
+            <a href="index.html"><img src="static/jhm.png" class="logo_img" /></a>
+            <div id="gnb_menu"> </div>
+        </div>
+    </div>
+
+    <!-- 내용 -->
+    <div class="container" >
+        <div  class="box_800" >
+            <h2> 팝업의 종류 </h2>
+            <h3> 계속 추가해 나갈 것  </h3>
+             <p>
+                 <button id="btn_click1" > 내부에서 나타나기 클릭</button> <br><br>
+                 <button id="btn_click2" > 아래에서 위로 나타나기 클릭</button>
+             </p>
+
+             <!-- div popup -->
+             <div id="popup1" style="background-color:#e2e0e0;width:300px;height:150px;margin:0 auto;display: none; position:relative;top:-50px;"></div>
+
+        </div><!--// box_800 -->
+    </div>
+    <!--// 내용 -->
+
+
+    <!--  FOOTER -->
+    <div class="container">
+        <div class="box2">
+          <p> © 2021 - mjh. All rights reserved. </p>
+        </div>
+    </div>
+
+    <!-- div popup -->
+    <div id="popup2" style="background-color:#e2e0e0;width:300px;height:150px;margin:0 auto;display:none; "></div>
+
+
+    <script>
+    const obj1 = document.getElementById("btn_click1");
+    obj1.addEventListener("click", fn_show1);
+
+    const obj2 = document.getElementById("btn_click2");
+    obj2.addEventListener("click", fn_show2);
+
+    function fn_show1()
+    {
+        const pop1 = document.getElementById("popup1");
+        if(pop1.style.display == "none"){
+            pop1.style.display = "block";
+        }else{
+            pop1.style.display = "none";
+        }
+    }
+
+    function fn_show2()
+    {
+        const pop2 = document.getElementById("popup2");
+
+        var cl = fn_has_class(pop2, 'poup_up');
+        console.log(cl);
+
+        if(cl === false){
+            pop2.style.display = "block";
+            pop2.classList.remove("poup_down");
+            pop2.classList.add("poup_up");
+
+        } else{
+            pop2.classList.remove("poup_up");
+            pop2.classList.add("poup_down");
+            //pop2.style.display = "none";
+        }
+    }
+
+    function fn_has_class(obj, classNm)
+    {
+        var cnt = obj.classList.length;
+        for(var i=0; i < cnt; i++){
+            if(obj.classList[i] == classNm){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    </script>
+
+
+    <!-- <script src="static/gnb.js"></script> -->
+</body>
+</html>
