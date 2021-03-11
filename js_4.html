@@ -24,107 +24,18 @@
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
-    <script>
-    //자바스에서 선언하는 방법 
-    (function(){
-        console.log("javas");
-    })()
-
-
-
-    </script>
-
-
 
 </head>
 <body>
 
     <div id="redux"></div>
 
-
-    <script>
-        //선언
-        // (function($){
-        //     console.log("start");
-        //
-        //       $.fn.eraser = function(method) {
-        //           console.log(method);
-        //           console.log("func1");
-        //       };
-        // })(jQuery);
-
-
-        /*
-        (function($){
-        })(jQuery);
-
-이경우는 Jquery를 사용할 때, $ 달러의 의미를 jquery에서 사용하겠다는 의미가 내포되어 있습니다.
-즉, $를 jquery만 사용하는 것이 아니라 다른 라이브러리에서도 사용할 수 있기 때문이에요.
-만약 prototype.js 랑 jquery를 같이 사용하는 경우에는  $가 충돌이 발생하는 것입니다.
-그래서 아예..
-함수로 $를 매개변수로 해서 넘기는 것입니다.
-jQuery 이것이 jquery 객체이지요.
-저 함수안에서 $의 의미는 jquery 객체로 사용이 되는 것이에요..
-prototype.js 와 jquery로 프로그래밍을 함께 병행하실 때는..
-(function($){
-...
-..
-..
-   이 안에서만 jquery를 자유롭게 사용하게 됩니다.
-...
-})(jQuery);
-
-$.fn.메소드명 = function(파라미터){  // jQuery 프로토타입은 보통 다음과 같이 선언
-	$(this).each(function(){
-		: // 처리할코드
-	});
-};
-
-$('css셀렉터').메소드명(파라미터); // 메소드 사용방법
-
-        */
-
-        // 사용
-        // $(function(){  // 함수 실행
-        //    $('#redux').eraser();
-        //  });
-        //
-        //
-        //  $(document).ready(function(){ });  // window.onload = function() {}과 같은 기능
-
-
-         // 이걸 순수 자바스크립트로 한다고 하면??
- /*
-         function craySampleClass() {
-         	this.message="달린다";
-         }
-         craySampleClass.prototype.run = function(){
-         	alert(this.message);
-         }
-
-// 자바스크립트 방식
-function cvt()
-{
-  var obj = document.querySelectorAll('.craytext');
-  obj.forEach(function(element){
-    element.style.borderColor='red';
-  });
-}
- */
-    </script>
-
     <div class="container-gnb">
         <div role="navigation" class="pc_header_gnb">
             <a href="index.html"><img src="static/jhm.png" class="logo_img" /></a>
             <div id="gnb_menu"> </div>
         </div>
-    </div>
-
-
-
-
-
-    <hr>
+    </div><hr>
     <footer class="footer">
         <div class="">
           <p> © 2021 - mjh. All rights reserved. </p>
