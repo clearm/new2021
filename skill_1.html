@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no, date=no">
+    <title>JH WEB PROGRAMMER JH - WELCOME PAGE </title>
+    <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/8.0.1/normalize.css" > -->
+    <link rel="stylesheet" href="static/reset.css" >
+    <link rel="stylesheet" href="static/tag.css" >
+    <link rel="stylesheet" href="static/a_style.css" >
+    <link rel="stylesheet" href="static/layout.css" >
+
+    <link rel="stylesheet" href="static/digital_font.css" >
+
+    <style>
+    .container-head {
+        padding: 5px 5px;
+        max-width: 900px;
+        margin: 20px auto;
+    }
+
+.display-none-txt { display: none;}
+p.typing-view {
+/*       position: absolute;*/
+display: inline-block;
+animation-name: cursor;
+animation-duration: 0.3s;
+animation-iteration-count: infinite;
+}
+.typing-view ul li{
+display:block;
+}
+.typing-view ul li.on {
+display: inline-block;
+animation-name: cursor;
+animation-duration: 0.3s;
+animation-iteration-count: infinite;
+}
+@keyframes cursor{
+0%{border-right: 1px solid #fff}
+50%{border-right: 1px solid #000}
+100%{border-right: 1px solid #fff}
+}
+    </style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YZJFNR32C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3YZJFNR32C');
+    </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head><body>
+
+    <div class="container-head">
+        <div  class="box_800">
+            <p class="display-none-txt">안녕하세요~ web developer jh 입니다.  </p>
+            <p class="typing"></p>
+            <p class="typing-view"></p>
+            <p> 사이트가 free인 관계로 프로그래밍 없이 css, javascript, html5 로 만 만들어진 WEB PAGE 입니다.<br>
+                여러가지 글을 쓸 예정이고 이곳은 2021년에 대한 기록이 될 것입니다.
+                full stack 개발자가 사이트도 없어서 라고 하지만 생각보다 css을 못하더라고요. <br>
+
+                2021년 동안 만들어질 것이라 아직은 미숙한 것이 많습니다.<br>
+                여기는 공지 같은 공간이고 주저리 공간입니다. 변명 같지만 SIMPLE IS BEST 입니다 ㅎㅎㅎ <BR>
+                저에게 디자인 감각을 주신다면 좋겠어요 ^^
+            </p>
+        </div>
+    </div>
+
+    <script>
+    let typingBool = false;
+    var typingIdx=0;
+    let typingTxt =  document.querySelector(".display-none-txt").innerText;     //  $(".display-none-txt").text(); // 타이핑될 텍스트를 가져온다
+
+     typingTxt = typingTxt.split(""); // 한글자씩 자른다.
+
+    //console.log(typingTxt);
+
+    if(typingBool==false){ // 타이핑이 진행되지 않았다면
+       typingBool=true;
+       var tyInt = setInterval(typing,100); // 반복동작
+     }
+
+     function typing(){
+       if(typingIdx < typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복
+         // $(".typing-view").append(typingTxt[typingIdx]); // 한글자씩 이어준다.
+         document.querySelector(".typing-view").textContent  += typingTxt[typingIdx];
+
+         typingIdx++;
+       } else{
+         clearInterval(tyInt); //끝나면 반복종료
+       }
+     }
+    </script>
+
+
+
+    <div class="container-gnb">
+        <div role="navigation" class="pc_header_gnb">
+            <a href="index.html"><img src="static/jhm.png" class="logo_img" /></a>
+            <div id="gnb_menu">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div  class="box_400">
+            <h5> 나만의 브랜딩 </h5>
+            <p> 누구를 꾸며주는 일만 하다보니 나를 표현하는 연습을 해야겠다는 생각으로 만든 공간.<br> 다양한 버전을 선보일 예정입니다. </p>
+            <hr>
+            <table>
+                <!-- <tr>
+                    <td width="85%"><a href="application.html"> 어딘가에 지원하기(러프버전) </a></td><td>2021.02.04</td></tr> -->
+                <tr>
+                    <td width="83%"><a href="application5.html"> 어딘가에 지원하기(update) </a></td><td> <span id="now_date"></span></td></tr>
+                <!-- <tr>
+                    <td><a href="application3.html"> 어딘가에 지원하기(타임라인버전) </a></td><td>2021.02.04</td></tr>
+                <tr>
+                    <td><a href="application4.html">어딘가에 지원하기(tech기반버전) </a></td><td>2021.02.04</td></tr> -->
+            </table>
+        </div>
+
+        <div  class="box_400">
+            <h5> 나의 저장소 </h5>
+             <p> 여러 가지 기본에 대한 글 - 솔직히 적고 싶은데 자꾸 자체 검열이 되네요.<br>
+                 계속적으로 추가 하겠습니다.
+             </p>
+             <hr>
+              <table>
+                  <tr><td width="85%"> <a href="basic1.html"> web의기본 </a></td><td>2021.01.01</td></tr>
+                  <!-- <tr><td><a href="life1.html"> 인생의 명언 </a></td><td>2021.01.01</td></tr>
+                  <tr><td><a href="js_1.html"> JS </a></td><td>2021.01.01</td></tr>
+                 <tr><td><a href="current.html"> 현재시간 </a></td><td>2021.01.01</td></tr> -->
+              </table>
+        </div>
+        <hr>
+        <!-- 내용 -->
+        <div  class="box_400" >
+            <!-- <h2> 시간날짜 </h2> -->
+            <h5> 날짜와 시간 </h5>
+            <p class="digital_style"> TODAY : <span id="this_year_num"></span>/<span id="this_month_num"></span>/<span id="this_date_num"></span>
+            </p>
+
+            <h3> 이번 달 남은 일자와 시간 - 한 달이 요것밖에 안 남음 </h3>
+            <p class="digital_style">
+                <span id="days_ten">0</span>
+                <span id="days_il">0</span>
+                :
+                <span id="hour_ten">0</span>
+                <span id="hour_il">0</span>
+                :
+                <span id="min_ten">0</span>
+                <span id="min_il">0</span>
+                :
+                <span id="sec_ten">0</span>
+                <span id="sec_il">0</span>
+             </p>
+        </div>
+        <script src="static/countdown.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <div  class="box_400" >
+            <h3> 바코드 쿠폰 - jquery 사용. </h3>
+
+            <div class="barcode_layout">
+                <div id="barcode_display"></div>
+            </div>
+            <script src="static/jquery-barcode.js"></script>
+            <script>
+
+            $("#barcode_display").barcode("1234567890128", "code128");
+            </script>
+        </div><!-- BOX END -->
+
+        <div  class="box_400" >
+            <h3> 슬라이드 - jquery , bxslider 사용. </h3>
+
+            <style>
+            .slider div {
+                width:100px;
+                height:100px;
+                text-align: center;
+            }
+            </style>
+              <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+                <div style="width:200px;height:200px;">
+                    <div class="slider">
+                        <div>I am a slide.</div>
+                        <div>I am another slide.</div>
+                    </div>
+                </div>
+                <script>
+                      $(document).ready(function(){
+                        $('.slider').bxSlider();
+                      });
+                </script>
+
+        </div><!-- BOX END -->
+
+
+        <div  class="box_400" >
+            <h3> 문자 복사하기 - jquery , clipboard.js 사용. </h3>
+            <div class="box">
+                <span> #나만의 #나를위한 #나에의한 </span>
+                <a href="javascript:#"  class="btn_hashtag copy"  data-clipboard-text="#나만의 #나를위한 #나에의한">
+                    <button id="box_hash_copy1" src="resources/images/btn_hashtag.png" > 해시태그 복사하기</button></a>
+            </div>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+            <script>
+            var clipboard = new Clipboard('.copy');
+            clipboard.on('success', function(e) {
+                console.log(e);
+                return;
+            });
+
+            $("#box_hash_copy1").click(function(){
+                alert(" 해시태그가 복사되었습니다.");
+            });
+            </script>
+        </div><!-- BOX END -->
+
+
+        <div  class="box_400" >
+            <h3>  </h3>
+
+        </div><!-- BOX END -->
+
+
+
+        <hr>
+        <footer class="footer">
+            <div class="">
+              <p> © 2021 - mjh. All rights reserved. 연락처 : <a target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jhmun@edgerank.co.kr"  aria-label="메일주소">jhmun@edgerank.co.kr</a>  </p>
+            </div>
+        </footer>
+
+    </div>
+
+<script src="static/gnb.js"></script>
+
+<script>
+
+    var s_date = document.getElementById("now_date");
+    var today  = new Date();
+    var t_year   = today.getFullYear();
+    var t_month  = today.getMonth()+1;
+    var t_date   = today.getDate();
+
+    s_date.textContent = t_year+"-"+t_month+"-"+t_date;
+
+</script>
+
+
+</body>
+</html>

@@ -18,7 +18,7 @@
 }
 
 .pc_header_gnb {
-    background-color: #eef;
+    background-color: #1c1c5d;
     height:66px;
     margin: 0 0 10px 0;
     vertical-align: middle;
@@ -42,6 +42,10 @@
     vertical-align:middle;
     text-align: center;
 }
+.pc_header_gnb ul li a{
+    color:white;
+}
+
 .pc_header_gnb div{
     display: inline-block;
     width:90%;
@@ -64,7 +68,7 @@
   display:block;
   /* width: 850px; */
   min-height:100px;
-  /*margin: 0 0 15px 0;*/
+  margin: 0 0 15px 0;
   padding: 25px;
   border: 0.5px solid  #f6eaea; /*rgb(175, 170, 174);*/
   border-radius: .5em;
