@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1.2;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 blockquote, q {
@@ -45,4 +45,27 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+th, td {vertical-align: :middle }
+
+a {color: #333; text-decoration: none; line-height: 1.5;}
+a:hover, a:focus, a:active {color: #333; text-decoration: none;}
+a:visited {color: #333;}
+*, html {box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+*, *:before, *:after {box-sizing: border-box;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+
+header, section, nav, article, footer {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=password],
+input[type=search],
+select.a-select-multiple,
+textare {
+    outline: 0;
+    border-radius: 5px;
 }
