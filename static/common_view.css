@@ -1,0 +1,134 @@
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css); */
+
+.wrap {position:relative; max-width:640px; margin:0 auto; overflow:hidden;}
+.wrap {background-color: #e9e9e9; }
+
+
+.event-msg {
+	font-size:14px;
+	color: #295dab;
+	text-align: center;
+	line-height: 40px;
+}
+
+.section-board {
+	padding-top: 30px;
+    background-color: white;
+}
+.section-board .title {
+	padding: 20px 0 15px;
+	font-weight: bold;;
+	font-size: 20px;
+	color: #000;
+	overflow: hidden;
+	border-top: 1px solid #dcdcdc;
+}
+.section-board .tabs-board {
+	border-bottom: 1px solid #dcdcdc;
+	padding: 0;
+}
+.section-board .tabs-board li {
+	display: inline-block;
+	margin: 10px 12px 0;
+	padding-bottom: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	letter-spacing: -0.5px;
+}
+.section-board .tabs-board li:first-child {margin-left: 0;}
+.section-board .tabs-board li:last-child {margin-right: 0;}
+.section-board .tabs-board li.active {
+	position: relative;
+	font-weight: bold;
+
+}
+.section-board .tabs-board li.active::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width: 100%;
+	height: 2px;
+	background: #255cae;
+}
+.section-board .tabs-board li.active {
+	color: #255cae;
+}.section-board .tabs-board li.active:first-child {
+	color: #000;
+}
+
+.board-box {
+	display: block;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 40px;
+}
+
+/* for view */
+
+.board-p {
+    display: flex;
+    text-align: left;
+}
+
+
+
+
+
+
+/* for list */
+.board-list {
+	max-width: 760px;
+	margin: 0 auto;
+}
+.board-list .board-item {
+	display: flex;
+	align-items: center;
+	padding: 15px 0;
+	border-bottom: 1px solid #dcdcdc;
+	text-align: left;
+}
+.board-list .board-item .sub-item {
+	flex-grow: 1;
+}
+.board-list .board-item .sub-item .cate {
+	font-size: 10px;
+	color: #255cae;
+}
+.board-list .board-item .sub-item .subject {
+	margin-top: 4px;
+	padding-right: 20px;
+	font-size: 12px;
+	color: #000;
+}
+.board-list .board-item .sub-item .date {
+	margin-top: 15px;
+	font-size: 10px;
+	color: #808080;
+}
+.board-list .img-item {
+	flex-shrink: 0;
+	width: 65px;
+}
+.board-list .img-item .img-box {
+	width: 65px;
+	height: 65px;
+}
+.board-list .img-item .img-box img {
+	width: 100%;
+	height: 100%;;
+}
+
+
+/* footer */
+.footer {
+	padding: 10px 0 30px;
+	background: #d9d9d9;
+}
+.footer .box {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #191919;
+	letter-spacing: -0.5px;
+	text-align: center;
+}
