@@ -29,7 +29,10 @@ function UserTest() {
 
 function MyButton() {
   return (
-    <button>
+    <button
+      style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer' }}
+      onClick={() => alert('버튼을 클릭했습니다!')}
+    >
       I'm a button
     </button>
   );
